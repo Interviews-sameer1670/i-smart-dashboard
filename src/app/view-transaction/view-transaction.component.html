@@ -1,0 +1,30 @@
+<div class="card">
+    <div class="card-header bg-dark text-light">View Transactions</div>
+    <div class="card-body">
+        <form [formGroup]="viewTransactionForm">
+            <div class="form-group row">
+                <label for="frequency" class="col-sm-1 col-form-label">Frequency</label>
+                <div class="col-sm-3">
+                    <select id="frequency" class="form-control" formControlName="frequency" (change)="setMonthValue()">
+                        <option>Current</option>
+                        <option>Monthly</option>
+                    </select>
+                </div>
+        
+                <label for="month" class="col-sm-1 col-form-label">Month</label>
+                <div class="col-sm-3">
+                    <select id="month" class="form-control" formControlName="month" [attr.disabled]="disableMonthSelection ? '' : null">
+                        <option *ngFor="let mon of last6Months">{{mon}}</option>
+                    </select>
+                </div>
+        
+                <label for="category" class="col-sm-1 col-form-label">Category</label>
+                <div class="col-sm-3">
+                    <select id="category" class="form-control" formControlName="category">
+                        <option *ngFor="let category of paymentCategory">{{category}}</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

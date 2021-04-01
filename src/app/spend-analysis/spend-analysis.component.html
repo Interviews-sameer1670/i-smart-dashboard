@@ -1,0 +1,14 @@
+<div class="card">
+    <div class="card-header bg-dark text-light">Spend Analysis</div>
+    <div class="card-body">
+        <div style="display: block">
+            <canvas baseChart
+                    [data]="pieChartData"
+                    [labels]="pieChartLabels"
+                    [chartType]="chartType"
+                    [colors]="pieChartColors"
+                    [legend]="true">
+            </canvas>
+        </div>
+    </div>
+</div>
