@@ -24,12 +24,12 @@
                         <option>Make Payment</option>
                         <option>Receive Payment</option>
                     </select>
-                </div>
-                <div class="alert  alert-danger" 
-                    *ngIf="makeAndReceivePaymentsForm.get('amount').dirty 
-                    && makeAndReceivePaymentsForm.get('paymentType').value == 'Make Payment' 
-                    && makeAndReceivePaymentsForm.get('amount').value > accountBalance">
-                    Amount of payment cannot be more than your account balance
+                    <div class="mt-3 alert  alert-danger" 
+                        *ngIf="makeAndReceivePaymentsForm.get('amount').dirty 
+                        && makeAndReceivePaymentsForm.get('paymentType').value == 'Make Payment' 
+                        && makeAndReceivePaymentsForm.get('amount').value > accountBalance">
+                        Amount of payment cannot be more than your account balance
+                    </div>
                 </div>
             </div>
         

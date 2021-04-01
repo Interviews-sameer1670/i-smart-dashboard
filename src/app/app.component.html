@@ -6,16 +6,16 @@
 
 <div class="container-fluid">
     <div class="row py-4">
-        <div class="col-sm-3">
+        <div class="col-md-3 mb-4 mb-md-0">
             <app-transaction-form></app-transaction-form>
         </div>
-        <div class="col-sm-9">
+        <div class="col-md-9">
             <div class="row mb-4">
-                <div class="col-sm"><app-view-transaction (formValuesOut)="fetchTransactions($event)"></app-view-transaction></div>
+                <div class="col-md"><app-view-transaction (formValuesOut)="fetchTransactions($event)"></app-view-transaction></div>
             </div>
             <div class="row">
-                <div class="col-sm-7"><app-expenditure-list [userSelection]="userSelectionObject"></app-expenditure-list></div>
-                <div class="col-sm-5"><app-spend-analysis 
+                <div class="col-md-7 mb-4 mb-md-0"><app-expenditure-list [userSelection]="userSelectionObject"></app-expenditure-list></div>
+                <div class="col-md-5 mb-4 mb-md-0"><app-spend-analysis 
                     [userSelection]="userSelectionObject"
                     [pieChartLabels]="pieChartLabels"
                     [pieChartData]="pieChartData"

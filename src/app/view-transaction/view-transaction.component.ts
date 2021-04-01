@@ -39,7 +39,7 @@ export class ViewTransactionComponent implements OnInit {
       let d = new Date(this.today.getFullYear(), this.today.getMonth() - i, 1);
       this.last6Months.push(this.allMonths[d.getMonth()] + ' ' + d.getFullYear());
     }
-    console.log('last 6 months: ', this.last6Months);
+    // console.log('last 6 months: ', this.last6Months);
   }
 
   setMonthValue() {

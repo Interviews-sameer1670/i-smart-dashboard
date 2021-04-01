@@ -21,7 +21,7 @@ export class ExpenditureListComponent implements OnInit {
   }
 
   ngOnChanges() {
-    console.log('user selection in expenditure :', this.userSelection);
+    // console.log('user selection in expenditure :', this.userSelection);
   }
 
 }

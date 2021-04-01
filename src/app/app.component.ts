@@ -18,7 +18,7 @@ export class AppComponent {
   }
 
   fetchTransactions(event) {
-    console.log('output event from view transaction ', event);
+    // console.log('output event from view transaction ', event);
     this.userSelectionObject = event;
     let pieChartContent = JSON.parse(JSON.stringify(this.pieChartContentSchema));
     let transactionArray = this.externalApi.getTransactionData();

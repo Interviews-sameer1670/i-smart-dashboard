@@ -22,7 +22,7 @@ export class SpendAnalysisComponent implements OnInit {
   }
   
   ngOnChanges() {
-    console.log('user selection in spend analysis :', this.userSelection);
+    // console.log('user selection in spend analysis :', this.userSelection);
   }
 
 }
